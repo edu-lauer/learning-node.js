@@ -4,15 +4,21 @@
 const names = require('./4-moduleNames') // line 4 and 5 are basically eaqual.
 const {john, peter} = require('./4-moduleNames') // the difference is that in line 5 is destructered.
 const sayHi = require('./5-util')
+const data = require('./6-alternative-export-opition')
 
+console.log(data)
 console.log(names)
 
 sayHi('Susan')
 sayHi(john)
 sayHi(peter)
 
-console.log('---------------------');
+console.log('---------------------')
 
 // another option is to go with properties, using the properties of names as fallow:
 sayHi(names.john)
 sayHi(names.peter)
+
+console.log('---------------------')
+
+require('./7-mind-granade')
